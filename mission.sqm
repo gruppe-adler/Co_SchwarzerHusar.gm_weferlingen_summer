@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=5689;
+		nextID=5693;
 	};
 	class MarkerIDProvider
 	{
@@ -24,10 +24,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={883.00208,62.014172,4473.0205};
-		dir[]={0.87563407,-0.43849799,-0.20257038};
-		up[]={0.42722467,0.89872676,-0.098833822};
-		aside[]={-0.22539607,-1.6533886e-007,-0.97429222};
+		pos[]={12667.655,37.615486,6881.7993};
+		dir[]={0.37695417,-0.57359356,-0.72726262};
+		up[]={0.2639564,0.81913793,-0.50925577};
+		aside[]={-0.88783443,1.0768417e-008,-0.46018049};
 	};
 };
 binarizationWanted=0;
@@ -116,13 +116,14 @@ addons[]=
 	"A3_Structures_F_Enoch_Decals_Horizontal",
 	"gm_vehicles_land_wheeled_btr60_gc_army_btr60",
 	"gm_vehicles_land_tracked_bmp1_gc_army_bmp1",
-	"rhs_c_trucks"
+	"rhs_c_trucks",
+	"gm_vehicles_land_tracked_2p16_gc_army_2p16"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=70;
+		items=71;
 		class Item0
 		{
 			className="A3_Modules_F_Heli";
@@ -598,6 +599,13 @@ class AddonsMetaData
 			name="GAZ-66";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
+		};
+		class Item70
+		{
+			className="gm_vehicles_land_tracked_2p16_gc_army_2p16";
+			name="gm_vehicles_land_tracked_2p16_gc_army_2p16";
+			author="Global Mobilization";
+			url="global-mobilization.com";
 		};
 	};
 };
@@ -4354,7 +4362,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=531;
+		items=534;
 		class Item0
 		{
 			dataType="Layer";
@@ -26552,7 +26560,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={958.84961,44.678001,4552.8379};
+				position[]={958.84998,44.678001,4552.8379};
 				angles[]={0,0.79080868,0};
 			};
 			side="Empty";
@@ -26580,7 +26588,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="data\intro3.paa";
+							value="data\intro2.paa";
 						};
 					};
 				};
@@ -70862,6 +70870,132 @@ class Mission
 				};
 				nAttributes=13;
 			};
+		};
+		class Item531
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={14267.341,36.3409,9110.5146};
+			};
+			areaSize[]={5,-1,5};
+			flags=1;
+			id=5689;
+			type="ModuleHideTerrainObjects_F";
+			atlOffset=6.4849854e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="#filter";
+					expression="_this setVariable [""#filter"",_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=15;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="#hideLocally";
+					expression="_this setVariable [""#hideLocally"",_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item532
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={14280.018,35.943218,9115.5039};
+			};
+			areaSize[]={5,-1,5};
+			flags=1;
+			id=5690;
+			type="ModuleHideTerrainObjects_F";
+			atlOffset=6.4849854e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="#filter";
+					expression="_this setVariable [""#filter"",_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=15;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="#hideLocally";
+					expression="_this setVariable [""#hideLocally"",_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item533
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12676.909,24.779139,6867.4395};
+				angles[]={0.0012918708,1.2505519,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=5692;
+			type="gm_gc_army_2p16";
 		};
 	};
 	class Connections
